@@ -42,6 +42,10 @@
                         </select>
                     </div>
                     <div class="formulario-campo">
+                        <label for="email">Correo de contacto</label>
+                        <input type="email" id="email" placeholder="correo@correo.com">
+                    </div>
+                    <div class="formulario-campo">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" rows="4"></textarea>
                     </div>
