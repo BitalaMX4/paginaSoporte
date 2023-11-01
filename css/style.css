@@ -171,6 +171,10 @@ section {
         margin: 20px;
     }
 
+    .formulario-contenido {
+        margin-top: 50px;
+    }
+
     .formulario-imagen {
         display: none;
     }
