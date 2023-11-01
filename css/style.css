@@ -12,7 +12,6 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
-    z-index: 1000;
 }
 
 
@@ -32,7 +31,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
+    margin-bottom: 100px;
 }
 
 .form h2 {
@@ -44,13 +44,12 @@ section {
 .formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+    margin-top: 100px;
     border-radius: 15px;
     position: relative;
-    overflow: hidden;
     width: 100%; 
     max-width: 1000px;
-    height: 80%;
+    height: 100%;
 }
 
 
