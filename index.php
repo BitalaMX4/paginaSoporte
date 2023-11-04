@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
@@ -21,24 +25,24 @@
 
     <h1>Soporte Bitala</h1>
     <section>
-        <div class="formulario">
+        <div class="formularioo">
             <div class="formulario-imagen">
-                <img src="img/pexels-photo-5483070.jpeg" alt="">
+                <img src="img/programador.jpeg" alt="">
             </div>
             <div class="formulario-contenido">
-                <form class="form">
+                <form class="form" id="formulario">
                     <h2>Contacto</h2>
                     <div class="formulario-campo">
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre">
+                        <input type="text" id="nombre" required>
                     </div>
                     <div class="formulario-campo">
                         <label for="tipo-aplicacion">Tipo de aplicación</label>
                         <select id="tipo-aplicacion">
                             <option value="" disabled selected>--Seleciona una opción--</option>
-                            <option value="1">Móvil</option>
-                            <option value="2">Web</option>
-                            <option value="3">Escritorio</option>
+                            <option value="Movil">Móvil</option>
+                            <option value="Web">Web</option>
+                            <option value="Escritorio">Escritorio</option>
                         </select>
                     </div>
                     <div class="formulario-campo">
@@ -49,7 +53,7 @@
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" rows="4"></textarea>
                     </div>
-                    <input type="submit" class="formulario-enviar">
+                    <input type="submit" class="formulario-enviar" id="enviar">
                 </form>
             </div>
         </div>
@@ -64,6 +68,8 @@
             <p>bitalamx@gmail.com</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 

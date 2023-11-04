@@ -41,7 +41,7 @@ section {
 }
 
 
-.formulario {
+.formularioo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 100px;
@@ -164,7 +164,7 @@ section {
         display: none;
     }
 
-    .formulario {
+    .formularioo {
         grid-template-columns: 1fr;
         width: 70%;
         max-width: 100%;
@@ -173,6 +173,7 @@ section {
 
     .formulario-contenido {
         margin-top: 50px;
+        border-radius: 15px;
     }
 
     .formulario-imagen {
