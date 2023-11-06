@@ -9,12 +9,6 @@ $(document).ready(function() {
             var correo_cliente = $("#email").val();
             var mensaje = $("#mensaje").val();
 
-            console.log("Opción: " + opcion);
-            console.log("Nombre: " + nombre);
-            console.log("Tipo de aplicación: " + tipo);
-            console.log("Correo de cliente: " + correo_cliente);
-            console.log("Mensaje: " + mensaje);
-
             $.post("controller.php", {
                 opcion: opcion,
                 nombre: nombre,
