@@ -1,9 +1,9 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    display: grid;
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
 .header {
@@ -14,25 +14,38 @@ body {
     width: 100%;
 }
 
-
 .logo-header img {
     max-width: 100%;
     height: auto;
     width: 150px;
-    position: absolute;
+}
+
+
+.btn.btn-primary {
+    margin-left: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: -40px;
+    margin-bottom: 20px;
 }
 
 section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    margin-bottom: 100px;
+    min-height: 60vh;
+    margin-bottom: auto;
 }
 
 .form h2 {
@@ -44,12 +57,12 @@ section {
 .formularioo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
     border-radius: 15px;
     position: relative;
     width: 100%; 
     max-width: 1000px;
-    height: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 
@@ -141,10 +154,9 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 94%;
-    padding: 2px 90px;
+    padding: 10px 90px; /* Ajustar el relleno del footer */
+    flex-shrink: 0; /* Evitar que el footer se encoja más */
 }
-
 .contact-info {
     display: flex;
     align-items: center;
@@ -195,4 +207,15 @@ section {
     .copyright {
         order: 2;
     }
+}
+
+
+ 
+table.dataTable.display thead {
+    background-color: #117adb;
+    color: #fff;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-bottom: 10px;
 }
