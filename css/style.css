@@ -106,7 +106,8 @@ section {
 .formulario-campo input,
 .formulario-campo textarea,
 .formulario-campo select,
-.formulario-enviar {
+.formulario-enviar,
+.login {
     width: 100%;
     padding: 7px;
     border: 1px solid #ccc;
@@ -116,7 +117,8 @@ section {
 }
 
 
-.formulario-enviar {
+.formulario-enviar,
+.login {
     padding: 10px;
     margin-top: 10px;
     background-color: #045aaa;
@@ -145,6 +147,18 @@ section {
 }
 
 
+.login {
+    text-align: center;
+    text-decoration: none;
+}
+
+#login:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #034786;
+
+}
+
 
 .footer {
     position: relative;
@@ -154,8 +168,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 90px; /* Ajustar el relleno del footer */
-    flex-shrink: 0; /* Evitar que el footer se encoja más */
+    padding: 10px 90px;
+    flex-shrink: 0;
 }
 .contact-info {
     display: flex;

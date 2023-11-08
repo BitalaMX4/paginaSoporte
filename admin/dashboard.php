@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dasdhboard Soporte Bitala</title>
+    <title>Dashboard Soporte Bitala</title>
     <link rel="shortcut icon" href="img/logo-ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
@@ -24,8 +24,9 @@
 <header class="header">
         <div class="header-content">
             <div class="logo-header">
-                <img src="img/logo.png" alt="logo Bitala">
+                <img src="../img/logo.png" alt="logo Bitala">
             </div>
+            <a type="button" class="btn btn-danger" href="./login.php">Cerrar Sesión</a>
         </div>
     </header>
     <div class="container">
@@ -103,6 +104,12 @@
             </tbody>
         </table>
     </div>
+
+    <footer class="footer"  style="margin-top: 10px;">
+        <div class="copyright">
+            © Bitala 2023
+        </div>
+    </footer>
 
 
     <script>
