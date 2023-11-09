@@ -34,10 +34,11 @@
         <table id="myTable" class="display">
             <thead class="table-primary">
                 <tr>
-                    <th>Nombre Completo</th>
+                    <th>Id</th>
+                    <th width="150px">Nombre Completo</th>
                     <th>Tipo de Aplicación</th>
                     <th>Correo de Contacto</th>
-                    <th width="500px">Mensaje</th>
+                    <th width="500px" style="text-align: center;">Mensaje</th>
                 </tr>
             </thead>
             <tbody>

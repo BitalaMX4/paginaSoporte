@@ -18,6 +18,8 @@ function enviarMensaje() {
       },
       success: function (response) {
         swal("¡Mensaje enviado!", "El mensaje se ha enviado correctamente.", "success");
+        $("#nombre, #tipo-aplicacion, #email, #mensaje").val('');
+
       },
       error: function (error) {
         swal("¡Error!", "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.", "error");
@@ -28,14 +30,11 @@ function enviarMensaje() {
   }
 }
 
-// Agregar un listener para el evento 'submit' del formulario
 $(document).ready(function() {
   $('#formulario').submit(function(event) {
-    event.preventDefault(); // Evitar el comportamiento predeterminado del formulario
+    event.preventDefault();
     if (validarCampos()) {
-      enviarMensaje(); // Llamar a la función para enviar el mensaje
-    } else {
-      console.error("Por favor, complete todos los campos.");
+      enviarMensaje();
     }
   });
 });
