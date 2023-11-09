@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Soporte Bitala</title>
-    <link rel="shortcut icon" href="img/logo-ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -41,66 +41,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Móvil</td>
-                    <td>johndoe@email.com</td>
-                    <td>Necesito ayuda con problemas de inicio de sesión en la aplicación móvil.</td>
-                </tr>
-                <tr>
-                    <td>Jane Smith</td>
-                    <td>Escritorio</td>
-                    <td>janesmith@email.com</td>
-                    <td>Mi aplicación de escritorio se cierra inesperadamente, ¿cómo puedo solucionarlo?</td>
-                </tr>
-                <tr>
-                    <td>Mike Johnson</td>
-                    <td>Web</td>
-                    <td>mikejohnson@email.com</td>
-                    <td>No puedo acceder a mi cuenta bancaria a través del sitio web, ¿pueden ayudarme?</td>
-                </tr>
-                <tr>
-                    <td>Laura Brown</td>
-                    <td>Móvil</td>
-                    <td>laurabrown@email.com</td>
-                    <td>Problemas con la sincronización de datos de salud en la aplicación móvil.</td>
-                </tr>
-                <tr>
-                    <td>David Garcia</td>
-                    <td>Escritorio</td>
-                    <td>davidgarcia@email.com</td>
-                    <td>La aplicación de escritorio no muestra correctamente las reservas realizadas.</td>
-                </tr>
-                <tr>
-                    <td>Sara Martinez</td>
-                    <td>Web</td>
-                    <td>saramartinez@email.com</td>
-                    <td>Problemas para acceder a los módulos de cursos en el sitio web.</td>
-                </tr>
-                <tr>
-                    <td>Chris Adams</td>
-                    <td>Móvil</td>
-                    <td>chrisadams@email.com</td>
-                    <td>La aplicación móvil de entretenimiento reproduce videos de manera irregular.</td>
-                </tr>
-                <tr>
-                    <td>Emily Wilson</td>
-                    <td>Web</td>
-                    <td>emilywilson@email.com</td>
-                    <td>Problemas al realizar pedidos a través del sitio web de comida.</td>
-                </tr>
-                <tr>
-                    <td>Kevin Lee</td>
-                    <td>Escritorio</td>
-                    <td>kevinlee@email.com</td>
-                    <td>No se actualizan los resultados de los partidos en tiempo real en la aplicación de escritorio de deportes.</td>
-                </tr>
-                <tr>
-                    <td>Mia Rodriguez</td>
-                    <td>Móvil</td>
-                    <td>miarodriguez@email.com</td>
-                    <td>La aplicación móvil de moda muestra errores al intentar realizar compras.</td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
@@ -111,7 +52,7 @@
         </div>
     </footer>
 
-
+<script src="../js/script.js"></script>
     <script>
         $(document).ready(function() {
             $('#myTable').DataTable({
@@ -120,7 +61,7 @@
                     "emptyTable": "No hay información",
                     "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
                     "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoFiltered": "(Filtrado de _MAX_ entradas totales)",
                     "infoPostFix": "",
                     "thousands": ",",
                     "lengthMenu": "Mostrar _MENU_ Entradas",
@@ -137,6 +78,8 @@
                 }
             });
         });
+
+        obtenerRegistros()
     </script>
 </body>
 
