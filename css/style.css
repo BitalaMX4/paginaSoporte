@@ -6,6 +6,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    min-height: 80vh;
+
+}
+
 .header {
     display: flex;
     justify-content: space-between;

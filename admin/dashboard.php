@@ -47,7 +47,7 @@
         </table>
     </div>
 
-    <footer class="footer"  style="margin-top: 10px;">
+    <footer class="footer"  style="margin-top: 10px; height: 74px;">
         <div class="copyright">
             © Bitala 2023
         </div>
