@@ -1,6 +1,6 @@
 <?php
 
-class ControladorApi
+class Peticiones
 {
     private $url;
 

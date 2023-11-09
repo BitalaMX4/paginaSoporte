@@ -1,7 +1,7 @@
 <?php
 require "Peticiones.php";
 
-$controlador = new ControladorApi();
+$controlador = new Peticiones();
 
 switch ($_POST["opcion"]) {
     case 'EnviarMensaje':
