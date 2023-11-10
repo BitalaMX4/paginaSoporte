@@ -12,6 +12,12 @@ switch ($_POST["opcion"]) {
         $response = $controlador->enviarMensaje('1', $nombre, $tipo, $correo_cliente, $mensaje);
         echo $response;
         break;
+    case 'Login':
+        $correo = $_POST["correo"];
+        $pass = $_POST["pass"];
+        $response = $controlador->login('2', $correo, $pass);
+        echo $response;
+        break;
     case 'ObtenerRegistros':
         $response = $controlador->obtenerRegistros('3');
         echo $response;

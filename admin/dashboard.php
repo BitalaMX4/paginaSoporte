@@ -1,4 +1,21 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: login.php");
+    exit;
+}
+
+if (isset($_GET['logout'])) {
+
+    $_SESSION = array();
+
+    session_destroy();
+
+    header("Location: login.php");
+    exit;
+}
 include("../lib/librerias.php");
 ?>
 
@@ -21,11 +38,11 @@ include("../lib/librerias.php");
             <div class="logo-header">
                 <img src="../img/logo.png" alt="logo Bitala">
             </div>
-            <a type="button" class="btn btn-danger" href="./login.php">Cerrar Sesión</a>
+            <a class="btn btn-danger" href="?logout=true">Cerrar Sesión</a>
         </div>
     </header>
     <div class="container">
-        <h1>Dashboard Soporte Bitala</h1>
+        <h1 style="font-weight: bold;">Dashboard Soporte Bitala</h1>
         <table id="myTable" class="display">
             <thead class="table-primary">
                 <tr>

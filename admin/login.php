@@ -9,7 +9,7 @@ include("../lib/librerias.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte Bitala</title>
-    <link rel="shortcut icon" href="img/logo-ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo-ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -39,9 +39,9 @@ include("../lib/librerias.php");
                     </div>
                     <div class="formulario-campo">
                         <label for="password">Contraseña</label>
-                        <input type="password" id="password" placeholder="correo@correo.com">
+                        <input type="password" id="password" placeholder="contraseña">
                     </div>
-                        <a type="submit" class="login" id="login" href="./dashboard.php">Iniciar Sesión</a>
+                    <input type="submit" class="login" id="login" value="Iniciar Sesión">
                 </form>
             </div>
         </div>
@@ -57,8 +57,8 @@ include("../lib/librerias.php");
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
-
+    <script src="../js/script.js"></script>
+</script>
 </body>
 
 </html>

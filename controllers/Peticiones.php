@@ -28,6 +28,23 @@ class Peticiones
         return $response;
     }
 
+    public function login($opcion, $correo, $pass) {
+        $ch = curl_init();
+        $data = array(
+            'opcion' => $opcion,
+            'correo' => $correo,
+            'pass' => $pass,
+        );
+        curl_setopt($ch, CURLOPT_URL, $this->url);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+    }
+    
+
     public function obtenerRegistros($opcion)
     {
         $ch = curl_init();
